@@ -1,9 +1,10 @@
-
 ###########
+
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
-alias contaArquivos='find . -type f | wc -l'
+alias countfile='find . -type f | wc -l'
+alias bigfolder='du -hsx . | sort -rh | head -20'
 
 ###########
 # Git Parcer
