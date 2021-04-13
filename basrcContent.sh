@@ -6,6 +6,8 @@ alias l='ls -CF'
 alias countfile='find . -type f | wc -l'
 alias bigfolder='du -hsx . | sort -rh | head -20'
 
+sed ':a;N;$!ba;s/\n/ /g' file
+
 ###########
 # Git Parcer
 parse_git_branch() {
