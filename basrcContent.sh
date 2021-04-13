@@ -12,6 +12,9 @@ sed -i ':a;N;$!ba;s/\n/ /g' file
 # deleta arquivos
 perl -e 'for(<*>){((stat)[9]<(unlink))}'
 
+find ./ -type f -delete
+
+
 ###########
 # Git Parcer
 parse_git_branch() {
