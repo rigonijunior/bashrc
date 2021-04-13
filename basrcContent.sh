@@ -6,7 +6,11 @@ alias l='ls -CF'
 alias countfile='find . -type f | wc -l'
 alias bigfolder='du -hsx . | sort -rh | head -20'
 
+# sed regex Replace
 sed -i ':a;N;$!ba;s/\n/ /g' file
+
+# deleta arquivos
+perl -e 'for(<*>){((stat)[9]<(unlink))}'
 
 ###########
 # Git Parcer
