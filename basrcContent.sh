@@ -3,8 +3,10 @@
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
-alias countfile='find . -type f | wc -l'
-alias bigfolder='du -hsx . | sort -rh | head -20'
+
+
+alias contaArquivos='find . -type f | wc -l'
+alias contaPastas='du -hsx . | sort -rh | head -20'
 
 # sed regex Replace
 sed -i ':a;N;$!ba;s/\n/ /g' file
