@@ -21,6 +21,10 @@ perl -e 'for(<*>){((stat)[9]<(unlink))}'
 
 find ./ -type f -delete
 
+# regex por negação
+(?m)^(?!.*\bquo\b).+$
+
+(?m)^(?:(?!\bquo\b).)+$
 
 ###########
 # Git Parcer
