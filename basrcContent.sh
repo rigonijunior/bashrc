@@ -22,6 +22,8 @@ perl -e 'for(<*>){((stat)[9]<(unlink))}'
 find ./ -type f -delete
 
 # regex por negação
+^(?:(?!ab).)+$
+
 (?m)^(?!.*\bquo\b).+$
 
 (?m)^(?:(?!\bquo\b).)+$
