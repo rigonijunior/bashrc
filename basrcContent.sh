@@ -28,6 +28,13 @@ find ./ -type f -delete
 
 (?m)^(?:(?!\bquo\b).)+$
 
+
+########### curl
+curl -O --no-progress-meter $url
+## Or
+wget -q $url
+###########
+
 ###########
 # Git Parcer
 parse_git_branch() {
