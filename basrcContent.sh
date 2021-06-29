@@ -8,8 +8,11 @@ alias l='ls -CF'
 alias contaArquivos='find . -type f | wc -l'
 alias contaPastas='du -hsx . | sort -rh | head -20'
 
-
+## Delere recursivo
+find . -name "advice-cbb" -exec rm -rf {} \;
 #
+
+
 alias l='(((dr|dxdw).*\n|.*20[0-9][0-9] )|(:\n.*\n))'
 
 
