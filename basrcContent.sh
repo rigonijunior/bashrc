@@ -12,9 +12,6 @@ alias contaPastas='du -hsx . | sort -rh | head -20'
 find . -name "advice-cbb" -exec rm -rf {} \;
 #
 
-
-
-
 alias l='(((dr|dxdw).*\n|.*20[0-9][0-9] )|(:\n.*\n))'
 
 
