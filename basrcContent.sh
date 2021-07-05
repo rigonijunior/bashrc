@@ -13,7 +13,13 @@ find . -name "advice-cbb" -exec rm -rf {} \;
 #
 
 
+
+
 alias l='(((dr|dxdw).*\n|.*20[0-9][0-9] )|(:\n.*\n))'
+
+
+#Desbloquando ip no fail2ban
+sudo fail2ban-client set sshd unbanip IP
 
 
 # sed regex Replace
