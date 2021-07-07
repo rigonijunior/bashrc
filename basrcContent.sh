@@ -8,11 +8,11 @@ alias l='ls -CF'
 alias contaArquivos='find . -type f | wc -l'
 alias contaPastas='du -hsx . | sort -rh | head -20'
 
-## Delere recursivo
+## Delete recursivo
 find . -name "advice-cbb" -exec rm -rf {} \;
 #
-
-alias l='(((dr|dxdw).*\n|.*20[0-9][0-9] )|(:\n.*\n))'
+## Delete onde dentro do scritp $1 é a pasta e $2 é a extensao
+find $1 -name *.$2 -exec rm {} \;
 
 
 #Desbloquando ip no fail2ban
