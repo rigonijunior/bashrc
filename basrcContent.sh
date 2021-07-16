@@ -34,7 +34,8 @@ find ./ -type f -delete
 
 (?m)^(?:(?!\bquo\b).)+$
 
-
+# Percola
+pt-query-digest /var/log/mysql/slow.log
 ########### curl
 curl -O --no-progress-meter $url
 ## Or
