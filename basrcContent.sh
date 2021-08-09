@@ -5,7 +5,7 @@ alias la='ls -A'
 alias l='ls -CF'
 alias contaArquivos='find . -type f | wc -l'
 alias contaPastas='du -hsx . | sort -rh | head -20'
-
+alias listaPasta='du -hs * | sort -h'
 ##
 # Converte vídeo para mobile
 ffmpeg -i entrada.mp4 -c:v libx264 -profile:v baseline -level 3.0 -pix_fmt yuv420p saida.mp4
