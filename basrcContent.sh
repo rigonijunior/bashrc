@@ -38,6 +38,10 @@ find ./ -type f -delete
 
 (?m)^(?:(?!\bquo\b).)+$
 
+# regex por multiplas linhas
+<b>[\w\W]*?(.*?)<\/b>
+
+
 # Percola
 pt-query-digest /var/log/mysql/slow.log
 ########### curl
