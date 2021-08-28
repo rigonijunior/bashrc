@@ -3,11 +3,12 @@
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
+
 alias contaArquivos='find . -type f | wc -l'
 alias listaPasta='du -h | egrep -v "\./.+/" | sort -h'
 alias listaArquivos='find . -type f  -exec du -h {} + | sort -r -h'
-
-
+alias redeDns='systemd-resolve --status'
+alias ipsBloquedos='fail2ban-client status sshd'
 
 ##
 # Converte vídeo para mobile
