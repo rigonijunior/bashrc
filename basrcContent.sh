@@ -44,6 +44,8 @@ find ./ -type f -delete
 
 # regex por multiplas linhas
 <b>[\w\W]*?(.*?)<\/b>
+# ou 
+(?s)<div(.*?/div>)
 
 
 # Percola
