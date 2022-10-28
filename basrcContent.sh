@@ -71,7 +71,6 @@ unset color_prompt force_color_prompt
 ###########
 
 ### Raid 0
-sudo mdadm --create /dev/md/raid4T /dev/nvme2n1p1 /dev/nvme3n1p1 --level=0 --raid-devices=2
 
-
+sudo mdadm --create /dev/md/Raid8T /dev/nvme2n1 /dev/nvme3n1 /dev/nvme4n1 /dev/nvme5n1 --level=0 --raid-devices=4
 
