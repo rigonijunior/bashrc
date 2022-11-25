@@ -16,6 +16,9 @@ ffmpeg -i entrada.mp4 -c:v libx264 -profile:v baseline -level 3.0 -pix_fmt yuv42
 
 
 
+## Delete recursivo por extenssão.
+find . -name '*.mutex' -type f -delete
+
 ## Delete recursivo
 find . -name "advice-cbb" -exec rm -rf {} \;
 #
