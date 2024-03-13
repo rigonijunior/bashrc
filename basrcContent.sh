@@ -21,7 +21,7 @@ for img in *.png; do convert "$img" "${img%.png}.jpg" && rm "$img"; done
 find . -name '*.mutex' -type f -delete
 
 ## Delete recursivo
-find . -name "advice-cbb" -exec rm -rf {} \;
+find . -name "advice-aaa" -exec rm -rf {} \;
 #
 ## Delete onde dentro do scritp $1 é a pasta e $2 é a extensao
 find $1 -name *.$2 -exec rm {} \;
