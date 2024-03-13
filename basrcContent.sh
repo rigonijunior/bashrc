@@ -14,7 +14,8 @@ alias ipsBloquedos='fail2ban-client status sshd'
 # Converte vídeo para mobile
 ffmpeg -i entrada.mp4 -c:v libx264 -profile:v baseline -level 3.0 -pix_fmt yuv420p saida.mp4
 
-
+# Converte todos arquivos da pasta
+for img in *.png; do convert "$img" "${img%.png}.jpg" && rm "$img"; done
 
 ## Delete recursivo por extenssão.
 find . -name '*.mutex' -type f -delete
