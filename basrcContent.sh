@@ -26,10 +26,8 @@ find . -name "advice-aaa" -exec rm -rf {} \;
 ## Delete onde dentro do scritp $1 é a pasta e $2 é a extensao
 find $1 -name *.$2 -exec rm {} \;
 
-
 #Desbloquando ip no fail2ban
 sudo fail2ban-client set sshd unbanip IP
-
 
 # sed regex Replace
 sed -i ':a;N;$!ba;s/\n/ /g' file
@@ -59,6 +57,9 @@ curl -O --no-progress-meter $url
 ## Or
 wget -q $url
 ###########
+
+## Convert imagens na pasta
+find /caminho/da/pasta -name "*.webp" -exec sh -c 'mogrify -format avif "$0" && rm "$0"' {} \;
 
 ###########
 # Git Parcer
